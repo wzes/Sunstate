@@ -1,6 +1,6 @@
 # sunstate-manage
 
-> A Vue.js project
+> the prototype for the course project of software technology management
 
 ## Build Setup
 
