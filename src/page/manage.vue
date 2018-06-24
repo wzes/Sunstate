@@ -19,11 +19,11 @@
             <el-menu-item index="addEquipment">Equipment</el-menu-item>
             <el-menu-item index="addJob">Job</el-menu-item>
           </el-submenu>
-          <el-submenu index="4">
-            <template slot="title"><i class="el-icon-edit"></i>Edit</template>
-            <!-- <el-menu-item index="uploadImg">上传图片</el-menu-item> -->
-            <el-menu-item index="vueEdit">Edit</el-menu-item>
-          </el-submenu>
+          <!--<el-submenu index="4">-->
+            <!--<template slot="title"><i class="el-icon-edit"></i>Edit</template>-->
+            <!--&lt;!&ndash; <el-menu-item index="uploadImg">上传图片</el-menu-item> &ndash;&gt;-->
+            <!--<el-menu-item index="vueEdit">Edit</el-menu-item>-->
+          <!--</el-submenu>-->
           <el-submenu index="5">
             <template slot="title"><i class="el-icon-setting"></i>Setting</template>
             <el-menu-item index="adminSet">Setting</el-menu-item>
@@ -31,7 +31,7 @@
           </el-submenu>
           <el-submenu index="6">
             <template slot="title"><i class="el-icon-warning"></i>About</template>
-            <el-menu-item index="explain">About</el-menu-item>
+            <el-menu-item index="about">About</el-menu-item>
           </el-submenu>
         </el-menu>
       </el-col>

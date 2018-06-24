@@ -14,6 +14,8 @@ const driverList = r => require.ensure([], () => r(require('@/page/driverList'))
 const addDriver = r => require.ensure([], () => r(require('@/page/addDriver')), 'addDriver')
 const equipmentList = r => require.ensure([], () => r(require('@/page/equipmentList')), 'equipmentList')
 const addJob = r => require.ensure([], () => r(require('@/page/addJob')), 'addJob')
+const about = r => require.ensure([], () => r(require('@/page/about')), 'about')
+const vueEdit = r => require.ensure([], () => r(require('@/page/vueEdit')), 'vueEdit')
 export default new Router({
   routes: [
     {
@@ -68,6 +70,15 @@ export default new Router({
         path: '/addEquipment',
         component: addEquipment,
         meta: ['add', 'equipment']
+      },
+      {
+        path: '/about',
+        component: about,
+        meta: ['about', 'about']
+      }, {
+        path: '/vueEdit',
+        component: vueEdit,
+        meta: ['edit', 'test edit']
       }]
     }
   ]

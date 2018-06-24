@@ -1,9 +1,8 @@
 <template>
     <div class="line1">
-        <div id="line1" class="" style="width: 90%;height:450px;"></div>
+        <div id="line1" class="" style="width: 90%;height:500px;"></div>
     </div>
 </template>
-
 <script>
 import echarts from 'echarts/lib/echarts'
 import 'echarts/lib/chart/bar'
@@ -21,7 +20,7 @@ export default {
   props: ['sevenDate', 'sevenDay'],
   methods: {
     initData () {
-      const colors = ['#5793f3', '#675bba', '#d14a61']
+      const colors = ['#5793f3', '#675bba', '#d14a61', '#175bba', '#e75bba']
       const option = {
         color: colors,
         title: {
@@ -122,7 +121,7 @@ export default {
           {
             name: 'new equipment',
             type: 'line',
-            data: this.sevenDate[1],
+            data: this.sevenDate[3],
             yAxisIndex: 1,
             markPoint: {
               data: [
@@ -134,7 +133,7 @@ export default {
           {
             name: 'new driver',
             type: 'line',
-            data: this.sevenDate[1],
+            data: this.sevenDate[4],
             yAxisIndex: 1,
             markPoint: {
               data: [

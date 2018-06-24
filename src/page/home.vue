@@ -54,7 +54,7 @@ export default {
       now.setDate(now.getDate() + 1)
       this.sevenDay.push(now.getDate())
       for (let j = 0; j < 5; j++) {
-        this.sevenDate[j][i] = Math.round(Math.random() * 300)
+        this.sevenDate[j][i - 1] = Math.round(Math.random() * 100 + 200)
       }
     }
   },
